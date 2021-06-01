@@ -30,7 +30,7 @@ export default function () {
     asyncBake(cakes, gfactory, function () {
       asyncBake(cakes, sfactory, function () {
         asyncBake(cakes, gfactory, function () {
-          print('Stop baking cakes \n\n', '#4f4')
+          print('Stop baking cakes \n\n', '#f44')
           print(JSON.stringify(cakes, '', 2) + '\n', '#f44')
           console.log(cakes)
         })
