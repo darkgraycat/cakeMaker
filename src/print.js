@@ -1,4 +1,4 @@
-var printer = null
+let printer = null
 window.onload = function () {
   printer = document.getElementById('printer')
 }
@@ -6,20 +6,26 @@ window.onload = function () {
 const CLEAR = 'CLS'
 const NEWLINE = 'NL'
 
-export default function print(msg, clr = '#ddd') {
+/**
+ * 
+ * @param {String} message Message to print
+ * @param {String} color Color in CSS format
+ */
+
+export default function print(message, color = '#ddd') {
   if (!printer) {
     setTimeout(function () {
-      print(msg, clr)
+      print(message, color)
     }, 50) //lol
     return
   }
-  if (msg === CLEAR) {
+  if (message === CLEAR) {
     printer.innerHTML = ''
-  } else if (msg === NEWLINE) {
+  } else if (message === NEWLINE) {
     printer.innerHTML += '\n'
   } else {
-    console.info('printer at [', performance.now().toFixed(2), '] says:\n', msg)
-    printer.innerHTML += '<span ' + 'style="color:' + clr + '"' + '>' + msg + '</span>'
+    console.info('printer at [', performance.now().toFixed(2), '] says:\n', message)
+    printer.innerHTML += `<span style="color:${color}">${message}</span>` // almost React lol
   }
 }
 
