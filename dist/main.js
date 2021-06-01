@@ -76,7 +76,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _prototype_style_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./prototype_style/main */ \"./src/prototype_style/main.js\");\n/* harmony import */ var _es6_style_main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./es6_style/main */ \"./src/es6_style/main.js\");\n\r\n\r\n\r\n\r\n(0,_prototype_style_main__WEBPACK_IMPORTED_MODULE_0__.default)()\r\n;(0,_es6_style_main__WEBPACK_IMPORTED_MODULE_1__.default)()\n\n//# sourceURL=webpack://cakemaker/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _prototype_style_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./prototype_style/main */ \"./src/prototype_style/main.js\");\n/* harmony import */ var _es6_style_main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./es6_style/main */ \"./src/es6_style/main.js\");\n\r\n\r\n\r\n/*\r\n  I know that I play with fire\r\n  having same names for classes\r\n  and I take all responsibility for that\r\n*/\r\n\r\n(0,_prototype_style_main__WEBPACK_IMPORTED_MODULE_0__.default)()\r\n;(0,_es6_style_main__WEBPACK_IMPORTED_MODULE_1__.default)()\n\n//# sourceURL=webpack://cakemaker/./src/index.js?");
 
 /***/ }),
 
