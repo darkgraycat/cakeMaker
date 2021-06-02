@@ -5,19 +5,18 @@ export default class Layer {
     this._isFilled = false
   }
 
-  getFlavor() {
+  get flavor() {
     return this._flavor
   }
 
-  isFilled() {
+  get isFilled() {
     return this._isFilled
   }
 
   fill(flavor) {
-    if (!this._isFilled) {
-      this._flavor = flavor
-      this._isFilled = true
-    }
+    if (this._isFilled) return
+    this._flavor = flavor
+    this._isFilled = true
   }
 
 }

@@ -6,7 +6,7 @@ export default () => {
 
   const TIME_FACTOR = 500
 
-  const asyncBake = async (cakes, factory) => {
+  const asyncBake = (cakes, factory) => {
     const size = ~~(2 + Math.random() * 4)
     const name = `ClassCake N${~~(Math.random() * 1000)}S${size}`
 
@@ -14,7 +14,7 @@ export default () => {
     print(`Start baking ${name} with size ${size}\n`)
 
     // im write this. but cant understand =(
-    return await new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       setTimeout(() => {
         cakes.push(factory.createRandomCake(name, size))
         print(`End baking ${name}\n`, '#8f8')
@@ -38,6 +38,9 @@ export default () => {
     .then(() => {
       print(`Stop baking cakes\n\n`, '#4f4')
       print(JSON.stringify(cakes, '', 2) + '\n', '#4f4')
+
+      console.log(cakes[0].recipe)
+
       console.log(cakes)
     })
 

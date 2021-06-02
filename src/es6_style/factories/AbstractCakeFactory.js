@@ -8,11 +8,11 @@ export default class AbstractCakeFactory {
     this._total = 0
   }
 
-  getTotal() {
+  get total() {
     return this._total
   }
 
-  getFlavors() {
+  get flavors() {
     return this._flavors
   }
 
