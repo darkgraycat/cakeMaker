@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/ts_style/main.ts":
+/*!******************************!*\
+  !*** ./src/ts_style/main.ts ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _print__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../print */ \"./src/print.js\");\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {\r\n    var TIME_FACTOR = 500;\r\n    var MAX_CAKES = 3;\r\n    (0,_print__WEBPACK_IMPORTED_MODULE_0__.default)('1');\r\n});\r\n\n\n//# sourceURL=webpack://cakemaker/./src/ts_style/main.ts?");
+
+/***/ }),
+
 /***/ "./src/es6_style/Cake.js":
 /*!*******************************!*\
   !*** ./src/es6_style/Cake.js ***!
@@ -76,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _prototype_style_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./prototype_style/main */ \"./src/prototype_style/main.js\");\n/* harmony import */ var _es6_style_main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./es6_style/main */ \"./src/es6_style/main.js\");\n\r\n\r\n\r\n/*\r\n  I know that I play with fire\r\n  having same names for classes\r\n  and I take all responsibility for that\r\n*/\r\n\r\n// prototypeStyle()\r\n(0,_es6_style_main__WEBPACK_IMPORTED_MODULE_1__.default)()\n\n//# sourceURL=webpack://cakemaker/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _prototype_style_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./prototype_style/main */ \"./src/prototype_style/main.js\");\n/* harmony import */ var _es6_style_main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./es6_style/main */ \"./src/es6_style/main.js\");\n/* harmony import */ var _ts_style_main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ts_style/main */ \"./src/ts_style/main.ts\");\n\r\n\r\n\r\n\r\n\r\n(0,_prototype_style_main__WEBPACK_IMPORTED_MODULE_0__.default)()\r\n;(0,_es6_style_main__WEBPACK_IMPORTED_MODULE_1__.default)()\r\n;(0,_ts_style_main__WEBPACK_IMPORTED_MODULE_2__.default)()\n\n//# sourceURL=webpack://cakemaker/./src/index.js?");
 
 /***/ }),
 
