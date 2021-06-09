@@ -1,4 +1,3 @@
-import { resolve } from '../../webpack.config'
 import print from '../print'
 import Cake from './Cake'
 import AbstractCakeFactory from './factories/AbstractCakeFactory'
