@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _prototype_style_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./prototype_style/main */ \"./src/prototype_style/main.js\");\n/* harmony import */ var _es6_style_main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./es6_style/main */ \"./src/es6_style/main.js\");\n/* harmony import */ var _ts_style_main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ts_style/main */ \"./src/ts_style/main.ts\");\n\r\n\r\n\r\n\r\n\r\n// prototypeStyle()\r\n// classStyle()\r\n(0,_ts_style_main__WEBPACK_IMPORTED_MODULE_2__.default)()\n\n//# sourceURL=webpack://cakemaker/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _prototype_style_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./prototype_style/main */ \"./src/prototype_style/main.js\");\n/* harmony import */ var _es6_style_main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./es6_style/main */ \"./src/es6_style/main.js\");\n/* harmony import */ var _ts_style_main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ts_style/main */ \"./src/ts_style/main.ts\");\n\r\n\r\n\r\n\r\n\r\n(0,_prototype_style_main__WEBPACK_IMPORTED_MODULE_0__.default)()\r\n;(0,_es6_style_main__WEBPACK_IMPORTED_MODULE_1__.default)()\r\n;(0,_ts_style_main__WEBPACK_IMPORTED_MODULE_2__.default)()\n\n//# sourceURL=webpack://cakemaker/./src/index.js?");
 
 /***/ }),
 
