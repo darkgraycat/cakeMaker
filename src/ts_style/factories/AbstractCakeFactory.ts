@@ -1,7 +1,8 @@
 import Cake from "../Cake"
 import Layer from "../Layer"
+import ICakeFactory from "./ICakeFactory"
 
-export default abstract class AbstractCakeFactory {
+export default abstract class AbstractCakeFactory implements ICakeFactory {
 
   protected flavors: string[] = []
   protected total: number = 0

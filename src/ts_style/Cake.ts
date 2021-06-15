@@ -1,9 +1,10 @@
-import Layer from "./Layer"
+import ICake from "./ICake"
+import ILayer from "./ILayer"
 
-export default class Cake {
+export default class Cake implements ICake {
 
   private name: string
-  private layers: Layer[]
+  private layers: ILayer[]
 
   constructor(name: string) {
     this.name = name
@@ -14,24 +15,25 @@ export default class Cake {
     return this.name
   }
 
-  setName(name: string): void {
-    this.name = name
-  }
-
   getRecipe(): string {
     const recipe: string[] = []
-    this.layers.map((layer: Layer, i: number) => {
+    this.layers.map((layer: ILayer, i: number) => {
       recipe.push(`${i + 1}: ${layer.getFlavor()}`)
     })
     return `=== ${this.name} ===\n${recipe.join(', \n')}\n`
   }
 
-  addLayer(layer: Layer): void {
+  addLayer(layer: ILayer): void {
     this.layers.push(layer)
   }
 
-  removeLayer(): Layer | null {
-    return this.layers.pop() || null
+  removeLayer(): ILayer {
+    const layer = this.layers.pop()
+    if (layer) {
+      return layer
+    } else {
+      throw new Error('No layers')
+    }
   }
 
 }

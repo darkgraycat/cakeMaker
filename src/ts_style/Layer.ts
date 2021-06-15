@@ -1,4 +1,6 @@
-export default class Layer {
+import ILayer from "./ILayer"
+
+export default class Layer implements ILayer {
 
   private flavor: string = 'empty'
   private filled: boolean = false
