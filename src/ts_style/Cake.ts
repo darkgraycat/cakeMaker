@@ -1,5 +1,5 @@
-import ICake from "./ICake"
-import ILayer from "./ILayer"
+import ICake from "./interfaces/ICake"
+import ILayer from "./interfaces/ILayer"
 
 export default class Cake implements ICake {
 

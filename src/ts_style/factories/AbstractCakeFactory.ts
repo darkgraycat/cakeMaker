@@ -1,6 +1,6 @@
 import Cake from "../Cake"
 import Layer from "../Layer"
-import ICakeFactory from "./ICakeFactory"
+import ICakeFactory from "../interfaces/ICakeFactory"
 
 export default abstract class AbstractCakeFactory implements ICakeFactory {
 

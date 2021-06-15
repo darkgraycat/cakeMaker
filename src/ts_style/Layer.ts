@@ -1,4 +1,4 @@
-import ILayer from "./ILayer"
+import ILayer from "./interfaces/ILayer"
 
 export default class Layer implements ILayer {
 

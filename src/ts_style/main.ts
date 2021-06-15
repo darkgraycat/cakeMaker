@@ -2,7 +2,7 @@ import print from '../print'
 import Cake from './Cake'
 import AbstractCakeFactory from './factories/AbstractCakeFactory'
 import GingerCakeFactory from './factories/GingerCakeFactory'
-import ICakeFactory from './factories/ICakeFactory'
+import ICakeFactory from './interfaces/ICakeFactory'
 import StrawberryCakeFactory from './factories/StrawberryCakeFactory'
 
 export default (): void => {
