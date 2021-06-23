@@ -1,6 +1,5 @@
 import print from '../print'
-import Cake from './Cake'
-import AbstractCakeFactory from './factories/AbstractCakeFactory'
+import ICake from './interfaces/ICake'
 import GingerCakeFactory from './factories/GingerCakeFactory'
 import ICakeFactory from './interfaces/ICakeFactory'
 import StrawberryCakeFactory from './factories/StrawberryCakeFactory'
@@ -10,7 +9,7 @@ export default (): void => {
   const TIME_FACTOR: number = 500
   const MAX_CAKES: number = 3
 
-  const asyncBake = (cakes: Cake[], factory: ICakeFactory): Promise<void> => {
+  const asyncBake = (cakes: ICake[], factory: ICakeFactory): Promise<void> => {
     const size: number = ~~(2 + Math.random() * 4)
     const name: string = `TsCake N${~~(Math.random() * 1000)}S${size}`
 
@@ -28,10 +27,9 @@ export default (): void => {
     })
   }
 
-  const sfactory = new StrawberryCakeFactory()
-  const gfactory = new GingerCakeFactory()
-
-  const cakes: Cake[] = []
+  const cakes: Array<ICake> = []
+  const sfactory: ICakeFactory = new StrawberryCakeFactory()
+  const gfactory: ICakeFactory = new GingerCakeFactory()
 
   print(`Start baking some ts-cakes\n\n`, '#44f')
 
