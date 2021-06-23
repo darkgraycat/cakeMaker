@@ -6,16 +6,16 @@ export default class Cake implements ICake {
   private name: string
   private layers: ILayer[]
 
-  constructor(name: string) {
+  public constructor(name: string) {
     this.name = name
     this.layers = []
   }
 
-  getName(): string {
+  public getName(): string {
     return this.name
   }
 
-  getRecipe(): string {
+  public getRecipe(): string {
     const recipe: string[] = []
     this.layers.map((layer: ILayer, i: number) => {
       recipe.push(`${i + 1}: ${layer.getFlavor()}`)
@@ -23,11 +23,11 @@ export default class Cake implements ICake {
     return `=== ${this.name} ===\n${recipe.join(', \n')}\n`
   }
 
-  addLayer(layer: ILayer): void {
+  public addLayer(layer: ILayer): void {
     this.layers.push(layer)
   }
 
-  removeLayer(): ILayer {
+  public removeLayer(): ILayer {
     const layer = this.layers.pop()
     if (layer) {
       return layer

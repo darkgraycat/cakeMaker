@@ -1,29 +1,33 @@
+import ICakeFactory from "../interfaces/ICakeFactory"
+import ICake from "../interfaces/ICake"
+import ILayer from "../interfaces/ILayer"
 import Cake from "../Cake"
 import Layer from "../Layer"
-import ICakeFactory from "../interfaces/ICakeFactory"
 
 export default abstract class AbstractCakeFactory implements ICakeFactory {
 
   protected flavors: string[] = []
   protected total: number = 0
 
-  getTotal(): number {
+  public constructor() { }
+
+  public getTotal(): number {
     return this.total
   }
 
-  getFlavors(): string[] {
+  public getFlavors(): string[] {
     return this.flavors
   }
 
-  getFlavorById(id: number): string {
+  public getFlavorById(id: number): string {
     return this.flavors[id] || this.flavors[0] || 'empry'
   }
 
-  createCake(name: string, pattern: number[]): Cake {
-    const cake: Cake = new Cake(name)
+  public createCake(name: string, pattern: number[]): ICake {
+    const cake: ICake = new Cake(name)
     pattern.map((id: number) => {
       const flavor: string = this.getFlavorById(id)
-      const layer: Layer = new Layer()
+      const layer: ILayer = new Layer()
       layer.fill(flavor)
       cake.addLayer(layer)
     })
@@ -31,7 +35,7 @@ export default abstract class AbstractCakeFactory implements ICakeFactory {
     return cake
   }
 
-  createRandomCake(name: string, size: number): Cake {
+  public createRandomCake(name: string, size: number): ICake {
     const max: number = this.flavors.length
     const pattern: number[] = [...Array(size)].map(() => ~~(Math.random() * max))
     return this.createCake(name, pattern)

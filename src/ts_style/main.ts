@@ -27,7 +27,7 @@ export default (): void => {
     })
   }
 
-  const cakes: Array<ICake> = []
+  const cakes: Array<ICake> = new Array<ICake>()
   const sfactory: ICakeFactory = new StrawberryCakeFactory()
   const gfactory: ICakeFactory = new GingerCakeFactory()
 
