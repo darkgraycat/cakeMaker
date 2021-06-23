@@ -20,7 +20,7 @@ export default abstract class AbstractCakeFactory implements ICakeFactory {
   }
 
   public getFlavorById(id: number): string {
-    return this.flavors[id] || this.flavors[0] || 'empry'
+    return this.flavors[id] || this.flavors[0] || 'empty'
   }
 
   public createCake(name: string, pattern: number[]): ICake {
