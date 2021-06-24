@@ -16,7 +16,7 @@ export default (): void => {
     print(`At[${performance.now().toFixed(2)}]: `, '#88f')
     print(`Start baking ${name} with size ${size}\n`)
 
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
       if (cakes.length >= MAX_CAKES)
         return reject(new Error('Maximum number of cakes exceed!'))
       setTimeout(() => {

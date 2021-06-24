@@ -4,12 +4,23 @@ import ILayer from "../interfaces/ILayer"
 import Cake from "../Cake"
 import Layer from "../Layer"
 
+
+
+// const f = new AbstractCakeFactory<Cake>()
+
 export default abstract class AbstractCakeFactory implements ICakeFactory {
 
   protected flavors: string[] = []
   protected total: number = 0
+  // protected type: new () => T
 
   public constructor() { }
+
+  // public constructor(type: new () => T) {
+  // ???
+  // this.type = type
+  // }
+
 
   public getTotal(): number {
     return this.total
@@ -22,6 +33,10 @@ export default abstract class AbstractCakeFactory implements ICakeFactory {
   public getFlavorById(id: number): string {
     return this.flavors[id] || this.flavors[0] || 'empty'
   }
+
+  // public createCake2(type: new () => T, name: string, pattern: number[]): T {
+  // }
+  // const cake = f.createCake2(Cake, 'name', [1,2,3,4])
 
   public createCake(name: string, pattern: number[]): ICake {
     const cake: ICake = new Cake(name)

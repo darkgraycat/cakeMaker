@@ -27,12 +27,12 @@ export default class Cake implements ICake {
     this.layers.push(layer)
   }
 
-  public removeLayer(): ILayer {
+  public removeLayer(): ILayer | null {
     const layer = this.layers.pop()
     if (layer) {
       return layer
     } else {
-      throw new Error('No layers')
+      return null
     }
   }
 

@@ -4,5 +4,5 @@ export default interface ICake {
   getName(): string
   getRecipe(): string
   addLayer(layer: ILayer): void
-  removeLayer(): ILayer
+  removeLayer(): ILayer | null
 }
